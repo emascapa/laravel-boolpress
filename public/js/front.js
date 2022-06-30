@@ -5107,6 +5107,36 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'About'
 });
@@ -5301,8 +5331,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Posts',
+  name: "Posts",
   data: function data() {
     return {
       posts: "",
@@ -41750,9 +41783,121 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", [_vm._v("About qui")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("div", [
+        _c("div", { staticClass: "p-5 bg-success" }, [
+          _c("h1", { staticClass: "display-3" }, [_vm._v("About ohoh")]),
+          _vm._v(" "),
+          _c("p", { staticClass: "lead" }, [_vm._v("Jumbo helper text")]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "container py-5" }, [
+          _c("div", { staticClass: "row text-center" }, [
+            _c("div", { staticClass: "col-lg-4" }, [
+              _c("img", {
+                staticClass: "rounded-circle mb-3",
+                attrs: {
+                  src: "data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==",
+                  alt: "Generic placeholder image",
+                  width: "140",
+                  height: "140",
+                },
+              }),
+              _vm._v(" "),
+              _c("h2", [_vm._v("Heading")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna."
+                ),
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-secondary",
+                    attrs: { href: "#", role: "button" },
+                  },
+                  [_vm._v("View details »")]
+                ),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-lg-4" }, [
+              _c("img", {
+                staticClass: "rounded-circle mb-3",
+                attrs: {
+                  src: "data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==",
+                  alt: "Generic placeholder image",
+                  width: "140",
+                  height: "140",
+                },
+              }),
+              _vm._v(" "),
+              _c("h2", [_vm._v("Heading")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh."
+                ),
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-secondary",
+                    attrs: { href: "#", role: "button" },
+                  },
+                  [_vm._v("View details »")]
+                ),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-lg-4" }, [
+              _c("img", {
+                staticClass: "rounded-circle mb-3",
+                attrs: {
+                  src: "data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==",
+                  alt: "Generic placeholder image",
+                  width: "140",
+                  height: "140",
+                },
+              }),
+              _vm._v(" "),
+              _c("h2", [_vm._v("Heading")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
+                ),
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-secondary",
+                    attrs: { href: "#", role: "button" },
+                  },
+                  [_vm._v("View details »")]
+                ),
+              ]),
+            ]),
+          ]),
+        ]),
+      ]),
+    ])
+  },
+]
 render._withStripped = true
 
 
@@ -41858,7 +42003,7 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("h1", [_vm._v("Post qui")]),
+    _vm._m(0),
     _vm._v(" "),
     _c("div", { staticClass: "container-fluid" }, [
       _c("div", { staticClass: "row" }, [
@@ -41868,7 +42013,7 @@ var render = function () {
               "div",
               {
                 staticClass:
-                  "\r\n                row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4\r\n                g-3\r\n              ",
+                  "\n              row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4\n              g-3\n            ",
               },
               _vm._l(_vm.postResponse.data, function (post) {
                 return _c("div", { key: post.id, staticClass: "col" }, [
@@ -41954,9 +42099,9 @@ var render = function () {
                               },
                               [
                                 _vm._v(
-                                  "\r\n                      " +
+                                  "\n                    " +
                                     _vm._s(page_num) +
-                                    "\r\n                    "
+                                    "\n                  "
                                 ),
                               ]
                             ),
@@ -42020,7 +42165,11 @@ var render = function () {
                 { staticClass: "list-unstyled" },
                 _vm._l(_vm.categories, function (category) {
                   return _c("li", { key: category.id }, [
-                    _vm._v(_vm._s(category.name)),
+                    _vm._v(
+                      "\n              " +
+                        _vm._s(category.name) +
+                        "\n            "
+                    ),
                   ])
                 }),
                 0
@@ -42047,7 +42196,18 @@ var render = function () {
     ]),
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "p-5 bg-primary text-light" }, [
+      _c("h1", { staticClass: "display-3" }, [_vm._v("Our posts")]),
+      _vm._v(" "),
+      _c("p", { staticClass: "lead" }, [_vm._v("Jumbo helper text")]),
+    ])
+  },
+]
 render._withStripped = true
 
 

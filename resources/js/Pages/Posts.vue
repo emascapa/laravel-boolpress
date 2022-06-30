@@ -1,7 +1,9 @@
 <template>
-
-<div>
-<h1>Post qui</h1>
+  <div>
+    <div class="p-5 bg-primary text-light">
+      <h1 class="display-3">Our posts</h1>
+      <p class="lead">Jumbo helper text</p>
+    </div>
 
     <div class="container-fluid">
       <div class="row">
@@ -93,7 +95,9 @@
             <h2>Categories</h2>
 
             <ul class="list-unstyled">
-              <li v-for="category in categories" :key="category.id">{{ category.name }}</li>
+              <li v-for="category in categories" :key="category.id">
+                {{ category.name }}
+              </li>
             </ul>
           </div>
           <div class="tags">
@@ -106,15 +110,14 @@
         </aside>
       </div>
     </div>
-</div>
-  
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'Posts',
+  name: "Posts",
 
-      data() {
+  data() {
     return {
       posts: "",
       postResponse: "",
@@ -182,7 +185,5 @@ export default {
 
     this.getTags();
   },
-
-
-}
+};
 </script>
