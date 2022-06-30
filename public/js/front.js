@@ -5237,6 +5237,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Posts",
   data: function data() {
@@ -42107,14 +42127,59 @@ var render = function () {
               _vm._v(_vm._s(_vm.post.title)),
             ]),
             _vm._v(" "),
-            _c("p", { staticClass: "lead" }, [
-              _vm._v("Category: " + _vm._s(_vm.post.category)),
-            ]),
+            _vm.post.category
+              ? _c("p", { staticClass: "lead" }, [
+                  _vm._v("Category: " + _vm._s(_vm.post.category.name)),
+                ])
+              : _c("p", { staticClass: "lead" }, [_vm._v("Category: N/A")]),
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "container py-5" }, [
-            _c("p", { staticClass: "lead" }, [
-              _vm._v(_vm._s(_vm.post.content)),
+            _c("div", { staticClass: "row g-5" }, [
+              _c("div", { staticClass: "col-12 col-md-4" }, [
+                _c("img", {
+                  staticClass: "img-fluid",
+                  attrs: { src: _vm.post.image, alt: _vm.post.title },
+                }),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-12 col-md-8" }, [
+                _c("p", { staticClass: "lead" }, [
+                  _vm._v(_vm._s(_vm.post.content)),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "col-12 text-center d-flex flex-column align-items-center",
+                },
+                [
+                  _c("span", { staticClass: "mb-2" }, [
+                    _vm._v("Date: " + _vm._s(_vm.post.date)),
+                  ]),
+                  _vm._v(" "),
+                  _vm.post.tags.length > 0
+                    ? _c(
+                        "span",
+                        [
+                          _vm._v("Tags: \n              "),
+                          _vm._l(_vm.post.tags, function (tag) {
+                            return _c("span", { key: tag.id }, [
+                              _vm._v(
+                                "\n                  #" +
+                                  _vm._s(tag.name) +
+                                  "\n              "
+                              ),
+                            ])
+                          }),
+                        ],
+                        2
+                      )
+                    : _c("span", [_vm._v("Tags: N/A")]),
+                ]
+              ),
             ]),
           ]),
         ])

@@ -3,15 +3,35 @@
     <div v-if="!loading">
       <div class="p-5 bg-primary text-light">
         <h1 class="display-3">{{ post.title }}</h1>
-        <p class="lead">Category: {{ post.category }}</p>
+        <p class="lead" v-if="post.category">Category: {{ post.category.name }}</p>
+        <p class="lead" v-else>Category: N/A</p>
       </div>
 
       <div class="container py-5">
-        <p class="lead">{{ post.content }}</p>
+        <div class="row g-5">
+          <div class="col-12 col-md-4">
+            <img :src="post.image" :alt="post.title" class="img-fluid" />
+          </div>
+          <div class="col-12 col-md-8">
+            <p class="lead">{{ post.content }}</p>
+          </div>
+
+          <div class="col-12 text-center d-flex flex-column align-items-center">
+            <span class="mb-2">Date: {{post.date}}</span>
+            <span v-if="post.tags.length > 0">Tags: 
+                <span v-for="tag in post.tags" :key="tag.id">
+                    #{{tag.name}}
+                </span>
+            </span>
+            <span v-else>Tags: N/A</span>
+
+          </div>
+        </div>
+        
       </div>
     </div>
     <div class="py-5 text-center" v-else>
-        <p class="lead">Loading...</p>
+      <p class="lead">Loading...</p>
     </div>
   </div>
 </template>
