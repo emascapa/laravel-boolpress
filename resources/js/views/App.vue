@@ -1,26 +1,77 @@
 <template>
   <div>
-    <welcome-page-guest></welcome-page-guest>
+    <!-- laravel header -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <div class="container">
+          <router-link class="navbar-brand" :to="{ name: 'home' }"
+            >BoolPress</router-link
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label=""
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <nav class="text-center">
-      <router-link to="/">Home</router-link> 
-      <router-link to="/about">About</router-link> 
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Left Side Of Navbar -->
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <router-link class="nav-link" :to="{ name: 'home' }"
+                  >Homepage</router-link
+                >
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" :to="{ name: 'about' }"
+                  >About</router-link
+                >
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" :to="{ name: 'posts' }"
+                  >Posts</router-link
+                >
+              </li>
+            </ul>
+
+            <!-- Right Side Of Navbar -->
+            <ul class="navbar-nav ms-auto"></ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- <welcome-page-guest></welcome-page-guest> -->
+
+    <!--     <nav class="text-center">
+      <router-link to="/">Home</router-link>
+      <router-link to="/about">About</router-link>
       <router-link to="/posts">Posts</router-link>
-    </nav>
+    </nav> -->
+    <main>
+      <router-view></router-view>
+    </main>
 
-    <router-view></router-view>
+    <footer class="bg-dark text-light py-4 text-center">
+      <span>Footer Here</span>
+    </footer>
   </div>
 </template>
 
 <script>
-import WelcomePageGuest from "../components/WelcomePageGuest.vue";
+//import WelcomePageGuest from "../components/WelcomePageGuest.vue";
 
 export default {
   name: "App",
 
-  components: {
+/*   components: {
     WelcomePageGuest,
-  },
+  }, */
 
   /*   data() {
     return {
@@ -83,14 +134,14 @@ export default {
     },
   },
 */
-  mounted() {
-/*     this.getPosts(1);
+  /*  mounted() {
+     this.getPosts(1);
 
     this.getCategories();
 
-    this.getTags(); */
+    this.getTags(); 
 
     console.log(this.$router.getRoutes());
-  }, 
+  }, */
 };
 </script>
