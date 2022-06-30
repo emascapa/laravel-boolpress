@@ -12,6 +12,7 @@ Vue.use(VueRouter)
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Posts from './Pages/Posts';
+import Post from './Pages/Post';
 
 
 
@@ -24,6 +25,7 @@ const routes = [
   { path: '/', name: 'home', component: Home },
   { path: '/about', name: 'about', component: About },
   { path: '/posts', name: 'posts', component: Posts },
+  { path: '/posts/:id', name: 'post', component: Post },
 ]
 
 // 3. Create the router instance and pass the `routes` option

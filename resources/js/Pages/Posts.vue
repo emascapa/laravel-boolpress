@@ -19,10 +19,19 @@
                 <div class="card h-100">
                   <img :src="post.image" alt="" />
 
-                  <div class="card-body">
-                    <h5>{{ post.title }}</h5>
+                  <div
+                    class="card-body d-flex flex-column justify-content-between"
+                  >
+                    <h4>{{ post.title }}</h4>
 
-                    <p>{{ post.content }}</p>
+                    <div>
+                      <p>{{ post.content.substring(0, 150) }}...</p>
+
+                     
+                      <router-link class="btn btn-outline-primary text-center" :to="{ name: 'post', params: {id: post.id} }"
+                        >Read More</router-link
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
