@@ -59,6 +59,14 @@ export default {
         .then((response) => {
           console.log(response.data);
 
+          if (response.data.status_code == 404) {
+
+            //this.loading = false;
+
+            this.$router.push({name: 'not-found'})
+          
+          } else {
+
           this.post = response.data;
 
           //this.postResponse = response.data;
@@ -66,6 +74,8 @@ export default {
           //console.log(this.posts);
 
           this.loading = false;
+
+          }
         })
         .catch((e) => {
           console.error(e);

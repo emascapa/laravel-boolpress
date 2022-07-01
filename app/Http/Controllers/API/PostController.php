@@ -21,7 +21,14 @@ class PostController extends Controller
         public function show($id) {
             $post = Post::with(['tags', 'category'])->find($id);
     
-            return $post;
+            if($post) {
+                return $post;
+            } else {
+                return response()->json([
+                    'status_code' => 404,
+                    'status_text' => 'not found'
+                ]);
+            }
         }
 
 /*         public function show(Post $post) {
